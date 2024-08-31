@@ -2,8 +2,7 @@ const express = require('express');
 const { getAllTasks, addTask, getTaskById, updateTask, deleteTask } = require('../controllers/taskController');
 const router = express.Router();
 
-// Define rotas para tarefas
-router.route('/tasks')
+router.route('/')
     .get(getAllTasks)
     .post(addTask);
 
